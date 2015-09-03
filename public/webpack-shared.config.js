@@ -6,13 +6,12 @@ var nodeModulesDir    = path.resolve(__dirname, '../node_modules');
 console.log('nodeModulesDir: ' + nodeModulesDir);
 
 var _                 = require('./js/underscore'),
-    webpack           = require('webpack'),
-    ExtractTextPlugin = require("extract-text-webpack-plugin");
+    webpack           = require('webpack');
 
 module.exports = function(overrides) {
   var merged = _.merge({
     entry: {
-      'index': './js/index', // start page
+      'index': './public/js/index', // start page
     },
     output: {
       path: path.resolve(__dirname, '..', 'build', 'public'),
