@@ -5,7 +5,7 @@ var path              = require('path');
 var nodeModulesDir    = path.resolve(__dirname, '../node_modules');
 console.log('nodeModulesDir: ' + nodeModulesDir);
 
-var _                 = require('./js/underscore'),
+var _                 = require('./public/js/underscore'),
     webpack           = require('webpack');
 
 module.exports = function(overrides) {
@@ -15,7 +15,7 @@ module.exports = function(overrides) {
     },
     output: {
       path: path.resolve(__dirname, '..', 'build', 'public'),
-      filename: './js/[name].js',
+      filename: './public/js/[name].js',
       sourceMapFilename: '[file].map',
       chunkFilename: "[id].js",
       publicPath: '/'
