@@ -5,7 +5,7 @@ var path              = require('path');
 var nodeModulesDir    = path.resolve(__dirname, '../node_modules');
 console.log('nodeModulesDir: ' + nodeModulesDir);
 
-var _                 = require('./public/js/underscore'),
+var _                 = require('./js/underscore'),
     webpack           = require('webpack');
 
 module.exports = function(overrides) {
