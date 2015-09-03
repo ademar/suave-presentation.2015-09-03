@@ -1,13 +1,12 @@
 
 console.log('__dirname' + __dirname);
+nodeModulesDir    = path.resolve(__dirname, '../node_modules');
+console.log('nodeModulesDir: ' + nodeModulesDir);
 
 var _                 = require('./js/underscore'),
     webpack           = require('webpack'),
     path              = require('path'),
-    nodeModulesDir    = path.resolve(__dirname, '../node_modules'),
     ExtractTextPlugin = require("extract-text-webpack-plugin");
-
-console.log('nodeModulesDir: ' + nodeModulesDir);
 
 module.exports = function(overrides) {
   var merged = _.merge({
