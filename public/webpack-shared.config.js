@@ -1,7 +1,6 @@
 var _                 = require('./js/underscore'),
     webpack           = require('webpack'),
     path              = require('path'),
-    nodeModulesDir    = '../node_modules',
     ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = function(overrides) {
