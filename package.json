@@ -5,9 +5,9 @@
   "main": "js/index.js",
   "private": true,
   "scripts": {
-    "install": "cd public/ && webpack --progress -d --colors --config webpack-dev.config.js",
-    "start": "cd public/ && webpack --watch --progress -d --colors --config webpack-dev.config.js",
-    "lint": "cd public/ && node node_modules/eslint/bin/eslint.js js"
+    "install": "webpack --progress -d --colors --config public/webpack-dev.config.js",
+    "start": "webpack --watch --progress -d --colors --config public/webpack-dev.config.js",
+    "lint": "node node_modules/eslint/bin/eslint.js public/js"
   },
   "author": "Henrik Feldt",
   "license": "MIT",
