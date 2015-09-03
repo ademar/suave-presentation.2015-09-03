@@ -22,7 +22,7 @@ module.exports = function(overrides) {
     },
     devtool: 'source-map',
     eslint: {
-      configFile: 'js/.eslintrc'
+      configFile: 'public/js/.eslintrc'
     },
     module: {
       // load logary-js source maps into published source maps
